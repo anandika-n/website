@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARN - BE BOLD AND EXPRESS </title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue-router@4.0.11/dist/vue-router.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.0/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-router@4.0.11/dist/vue-router.min.js"></script>
+
+
+
+</head>
+<body>
+    <header>
+        <h1>ARN</h1>
+        <div id="app"></div>
+        <nav>
+                <ul>
+                    <li><router-link to="/">Home</router-link></li>
+                    <li><router-link to="/products">Products</router-link></li>
+                    <li><router-link to="/cart">Cart</router-link></li>
+                </ul>
+            </nav>
+        
+        <script src="main.js"></script>
+    </header>
+    
+
+<router></router>
+    <main>
+        <router-view></router-view>
+        <!-- Product Listings -->
+        <section id="product-listings">
+            <!-- Individual Product Card -->
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h2>HOT PINK LIPGLOSS</h2>
+                <p class="description">Beautiful glossy shimmery gloss perfect for your glam look.</p>
+                <p class="price">$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Product 2">
+                <h2>DEEP RED LIPGLOSS</h2>
+                <p class="description">Make a statement with this deep red shade.</p>
+                <p class="price">$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+            
+            <!-- Repeat for other products -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ARN - BEST EMERGING BEAUTY BRAND !</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.0/dist/vue.global.prod.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
